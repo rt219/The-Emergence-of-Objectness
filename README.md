@@ -1,8 +1,12 @@
 # The-Emergence-of-Objectness
 This is the official released code for our paper, [The Emergence of Objectness: Learning Zero-Shot Segmentation from Videos](https://arxiv.org/abs/2111.06394), which has been accepted by NeurIPS 2021. Code will be available soon. 
 
+# Slide
+Our slide is available at:
+https://drive.google.com/file/d/1iM6mHTHWssl8Q3vqbsW0fC4Pqki-UbfM/view?usp=sharing
+
 # Code
-To be released.
+To be released soon after the conference. 
 
 # Abstract
 Humans can easily segment moving objects without knowing what they are. That objectness could emerge from continuous visual observations motivates us to model grouping and movement concurrently from unlabeled videos. Our premise is that a video has different views of the same scene related by moving components, and the right region segmentation and region flow would allow mutual view synthesis which can be checked from the data itself without any external supervision. 

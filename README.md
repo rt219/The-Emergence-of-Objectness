@@ -6,7 +6,22 @@ Our slide is available at:
 https://drive.google.com/file/d/1iM6mHTHWssl8Q3vqbsW0fC4Pqki-UbfM/view?usp=sharing
 
 # Code
-To be released soon after the conference. 
+\[**New** 2022.02.05\] We released our code and we are still finishing the leftover including the released model, a quick start section and a complementary documentation. 
+## Environment
+Our code is implemented based on the framework of MMSegmentation, please see the full environment information in the file 'requirements.txt'
+
+## Dataset
+We train our model on YoutubeVOS 2019 dataset. Please download it and set the correct path in the line "data_root" and the line of filename "split" in configs/config.py. A split file contains a list of file names. An example of YoutubeVOS 2019 can be:
+
+    train_all_frames/JPEGImages/fa88d48a92 00000.jpg 00001.jpg 00002.jpg 00003.jpg 00004.jpg 00005.jpg 
+    train_all_frames/JPEGImages/df59cfd91d 00000.jpg 00001.jpg 00002.jpg 00003.jpg 00004.jpg 00005.jpg
+   
+Each line represents a video frame directory and the frame files are followed. 
+
+## Training
+After setting the dataset, you could train with the following command:
+
+    PT_OUTPUT_DIR=$DIR_NAME sh sh_train_pt_param.sh configs/config.py $GPU $port
 
 # Abstract
 Humans can easily segment moving objects without knowing what they are. That objectness could emerge from continuous visual observations motivates us to model grouping and movement concurrently from unlabeled videos. Our premise is that a video has different views of the same scene related by moving components, and the right region segmentation and region flow would allow mutual view synthesis which can be checked from the data itself without any external supervision. 

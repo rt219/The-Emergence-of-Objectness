@@ -1,25 +1,37 @@
 # The-Emergence-of-Objectness
-This is the official released code for our paper, [The Emergence of Objectness: Learning Zero-Shot Segmentation from Videos](https://arxiv.org/abs/2111.06394), which has been accepted by NeurIPS 2021. Code will be available soon. 
+This is the official released code for our paper, [The Emergence of Objectness: Learning Zero-Shot Segmentation from Videos](https://arxiv.org/abs/2111.06394), which has been accepted by NeurIPS 2021. Code has been released and a complementary documentation is finishing. 
 
 # Slide
-Our slide is available at:
-https://drive.google.com/file/d/1iM6mHTHWssl8Q3vqbsW0fC4Pqki-UbfM/view?usp=sharing
+Our slide is available [here](https://drive.google.com/file/d/1iM6mHTHWssl8Q3vqbsW0fC4Pqki-UbfM/view?usp=sharing).
 
 # Code
 \[**New** 2022.02.05\] We released our code and we are still finishing the leftover including the released model, a quick start section and a complementary documentation. 
 ## Environment
-Our code is implemented based on the framework of MMSegmentation, please see the full environment information in the file 'requirements.txt'
+Our code is implemented based on the framework of MMSegmentation with PyTorch 1.5 and CUDA 10.1. Please see more environment information in the file `requirements.txt`. 
+
+## Quick Start
+Our pretrained model is released [here](https://drive.google.com/file/d/18DYiwhd6hHfqduDfYPxmixgEOuXkne8s/view?usp=sharing). 
+
+`data_example/` provides the example for inference. Here is a quick inference command example using the released model: 
+
+    PT_OUTPUT_DIR=$DIR_NAME sh sh_train_pt_param.sh configs/config_start.py $GPU $port
+
+The output results can be found in `output_quickstart/eval_test_0/`.
+
+And here is the training command example:
+    
+    PT_OUTPUT_DIR=$DIR_NAME sh sh_train_pt_param.sh configs/config.py $GPU $port
 
 ## Dataset
-We train our model on YoutubeVOS 2019 dataset. Please download it and set the correct path in the line "data_root" and the line of filename "split" in configs/config.py. A split file contains a list of file names. An example of YoutubeVOS 2019 can be:
+We train our model on YoutubeVOS 2019 dataset. Please download it and set the correct path in the line `data_root` and the line of filename `split` in configs/config.py. A split file contains a list of file names. An example of YoutubeVOS 2019 can be:
 
     train_all_frames/JPEGImages/fa88d48a92 00000.jpg 00001.jpg 00002.jpg 00003.jpg 00004.jpg 00005.jpg 
     train_all_frames/JPEGImages/df59cfd91d 00000.jpg 00001.jpg 00002.jpg 00003.jpg 00004.jpg 00005.jpg
    
-Each line represents a video frame directory and the frame files are followed. 
+Each line represents a video frame directory and the frame files are followed. We also provide examples in the section `Quick Start`
 
 ## Training
-After setting the dataset, you could train with the following command:
+The setting of the dataset and training parameters like iterations should be set in `config.py`. You could train with the following command:
 
     PT_OUTPUT_DIR=$DIR_NAME sh sh_train_pt_param.sh configs/config.py $GPU $port
 

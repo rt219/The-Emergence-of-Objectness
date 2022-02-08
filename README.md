@@ -10,7 +10,7 @@ Our slide is available [here](https://drive.google.com/file/d/1iM6mHTHWssl8Q3vqb
 Our code is implemented based on the framework of MMSegmentation with PyTorch 1.5 and CUDA 10.1. Please see more environment information in the file `requirements.txt`. 
 
 ## Quick Start
-Our pretrained model is released [here](https://drive.google.com/file/d/18DYiwhd6hHfqduDfYPxmixgEOuXkne8s/view?usp=sharing). 
+Our pretrained model is released [here](https://drive.google.com/file/d/18DYiwhd6hHfqduDfYPxmixgEOuXkne8s/view?usp=sharing). The foreground channel for this checkpoint is the 0th channel.
 
 `data_example/` provides the example for inference. Here is a quick inference command example using the released model: 
 

@@ -1,5 +1,5 @@
 # The-Emergence-of-Objectness
-This is the official released code for our paper, [The Emergence of Objectness: Learning Zero-Shot Segmentation from Videos](https://openreview.net/pdf?id=grfI7Rnv5P), which has been accepted by NeurIPS 2021. Code has been released and a complementary documentation is finishing. 
+This is the official released code for our paper, [The Emergence of Objectness: Learning Zero-Shot Segmentation from Videos](https://openreview.net/pdf?id=grfI7Rnv5P), which has been accepted by NeurIPS 2021. **Code has been released** and a complementary documentation is finishing. 
 
 # Slide
 Our slide is available [here](https://drive.google.com/file/d/1iM6mHTHWssl8Q3vqbsW0fC4Pqki-UbfM/view?usp=sharing).

@@ -22,12 +22,14 @@ And here is the training command example:
     PT_OUTPUT_DIR=$DIR_NAME sh sh_train_pt_param.sh configs/config_train.py $GPU $port
 
 ## Dataset
-We train our model on YoutubeVOS 2019 dataset. Please download it and set the correct path in the line `data_root` and the line of filename `split` in configs/config.py. A split file contains a list of file names. An example of YoutubeVOS 2019 can be:
+We provide dataset format examples in the section `Testing with the released model` with the directory `data_example/`.
+
+To train a model on a new dataset, please set the correct path in the line `data_root` and the line of filename `split` in configs/config_train.py. A split file contains a list of file names. An example of YoutubeVOS 2019 can be:
 
     train_all_frames/JPEGImages/fa88d48a92 00000.jpg 00001.jpg 00002.jpg 00003.jpg 00004.jpg 00005.jpg 
     train_all_frames/JPEGImages/df59cfd91d 00000.jpg 00001.jpg 00002.jpg 00003.jpg 00004.jpg 00005.jpg
    
-Each line represents a video frame directory and the frame files are followed. We also provide examples in the section `Quick Start`
+Each line represents a video frame directory and the frame files are followed. We also provide a full version train split of YoutubeVOS2019 [ytb_2019.txt](https://drive.google.com/file/d/15JX--24eHgM2OK4AK75teZTEiYgrrS8m/view?usp=sharing).
 
 ## Training
 The setting of the dataset and training parameters like iterations should be set in `config.py`. You could train with the following command:

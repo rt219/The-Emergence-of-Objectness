@@ -11,7 +11,7 @@ Our code is implemented based on the framework of MMSegmentation with PyTorch 1.
 ## Testing with the released model
 We released our [YouTube-VOS trained model](https://frontiers.blob.core.windows.net/pretraining/checkpoints/amd_pretrained.pth) which can be used for zero-shot segmentation on single images or single videos, with channel 0 for the foreground prediction. 
 
-`data_example/` provides the example for inference. Here is the inference command example using the released model: 
+Please download the released model and put it at the directory of this repository. `data_example/` provides the example data for inference. Here is the inference command example using the released model: 
 
     PT_OUTPUT_DIR=output_test sh sh_train_pt_param.sh configs/config_test.py $GPU $port
 

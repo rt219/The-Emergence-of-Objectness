@@ -21,7 +21,7 @@ log_config = dict(
 # yapf:enable
 dist_params = dict(backend='nccl')
 log_level = 'INFO'
-load_from = 'amd_pretrained.pth'
+load_from = None
 
 resume_from = None
 
@@ -87,7 +87,7 @@ train_cfg = dict()
 test_cfg = dict(mode='whole')
 
 # dataset settings
-dataset_type = 'PascalVOCDataset'
+dataset_type = 'AMDDataset'
 #data_root = ""
 data_root = 'data_example/'
 

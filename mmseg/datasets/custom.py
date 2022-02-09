@@ -364,7 +364,7 @@ class CustomDataset(Dataset):
         summary_str += line_format.format('global', iou_str, acc_str,
                                           all_acc_str)
         print_log(summary_str, logger)
-        print_log('\n [miou info] total_area_intersect total_area_union ::: {}, {}, {}'.format(total_area_intersect.tolist(), total_area_union.tolist(), iou.tolist()), logger)
+        #print_log('\n [miou info] total_area_intersect total_area_union ::: {}, {}, {}'.format(total_area_intersect.tolist(), total_area_union.tolist(), iou.tolist()), logger)
 
         eval_results['mIoU'] = np.nanmean(iou)
         eval_results['mAcc'] = np.nanmean(acc)

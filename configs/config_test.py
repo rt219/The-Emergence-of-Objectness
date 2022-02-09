@@ -87,7 +87,7 @@ train_cfg = dict()
 test_cfg = dict(mode='whole')
 
 # dataset settings
-dataset_type = 'PascalVOCDataset'
+dataset_type = 'AMDDataset'
 #data_root = ""
 data_root = 'data_example/'
 

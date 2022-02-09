@@ -13,13 +13,13 @@ We released our [YouTube-VOS trained model](https://frontiers.blob.core.windows.
 
 `data_example/` provides the example for inference. Here is the inference command example using the released model: 
 
-    PT_OUTPUT_DIR=$DIR_NAME sh sh_train_pt_param.sh configs/config_start.py $GPU $port
+    PT_OUTPUT_DIR=output_test sh sh_train_pt_param.sh configs/config_test.py $GPU $port
 
-The output results can be found in `output_quickstart/eval_test_0/`.
+The output results can be found in `output_test/eval_test_0/`.
 
 And here is the training command example:
     
-    PT_OUTPUT_DIR=$DIR_NAME sh sh_train_pt_param.sh configs/config.py $GPU $port
+    PT_OUTPUT_DIR=$DIR_NAME sh sh_train_pt_param.sh configs/config_train.py $GPU $port
 
 ## Dataset
 We train our model on YoutubeVOS 2019 dataset. Please download it and set the correct path in the line `data_root` and the line of filename `split` in configs/config.py. A split file contains a list of file names. An example of YoutubeVOS 2019 can be:

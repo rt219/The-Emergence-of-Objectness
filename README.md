@@ -1,18 +1,17 @@
 # The-Emergence-of-Objectness
-This is the official released code for our paper, [The Emergence of Objectness: Learning Zero-Shot Segmentation from Videos](https://openreview.net/pdf?id=grfI7Rnv5P), which has been accepted by NeurIPS 2021. **Code has been released** and a complementary documentation is finishing. 
+This is the official released code for our paper, [The Emergence of Objectness: Learning Zero-Shot Segmentation from Videos](https://openreview.net/pdf?id=grfI7Rnv5P), which has been accepted by NeurIPS 2021. 
 
 # Slide
 Our slide is available [here](https://drive.google.com/file/d/1iM6mHTHWssl8Q3vqbsW0fC4Pqki-UbfM/view?usp=sharing).
 
 # Code
-\[**New** 2022.02.05\] We released our code and we are still finishing the leftover including the released model, a quick start section and a complementary documentation. 
 ## Environment
 Our code is implemented based on the framework of MMSegmentation with PyTorch 1.5 and CUDA 10.1. Please see more environment information in the file `requirements.txt`. 
 
-## Quick Start
-Our pretrained model is released [here](https://drive.google.com/file/d/18DYiwhd6hHfqduDfYPxmixgEOuXkne8s/view?usp=sharing). The foreground channel for this checkpoint is the 0th channel.
+## Testing with the released model
+We released our [YouTube-VOS trained model](https://frontiers.blob.core.windows.net/pretraining/checkpoints/amd_pretrained.pth) which can be used for zero-shot segmentation on single images or single videos, with channel 0 for the foreground prediction. 
 
-`data_example/` provides the example for inference. Here is a quick inference command example using the released model: 
+`data_example/` provides the example for inference. Here is the inference command example using the released model: 
 
     PT_OUTPUT_DIR=$DIR_NAME sh sh_train_pt_param.sh configs/config_start.py $GPU $port
 

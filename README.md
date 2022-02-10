@@ -1,10 +1,6 @@
 # The-Emergence-of-Objectness
-This is the official released code for our paper, [The Emergence of Objectness: Learning Zero-Shot Segmentation from Videos](https://openreview.net/pdf?id=grfI7Rnv5P), which has been accepted by NeurIPS 2021. 
+This is the official released code for our paper, [The Emergence of Objectness: Learning Zero-Shot Segmentation from Videos](https://openreview.net/pdf?id=grfI7Rnv5P), and our [presentation slides](https://drive.google.com/file/d/1iM6mHTHWssl8Q3vqbsW0fC4Pqki-UbfM/view?usp=sharing) published at NeurIPS 2021. 
 
-# Slide
-Our slide is available [here](https://drive.google.com/file/d/1iM6mHTHWssl8Q3vqbsW0fC4Pqki-UbfM/view?usp=sharing).
-
-# Code
 ## Environment
 Our code is implemented based on the framework of MMSegmentation with PyTorch 1.5 and CUDA 10.1. Please see more environment information in the file `requirements.txt`. 
 
